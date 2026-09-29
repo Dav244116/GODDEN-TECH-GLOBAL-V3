@@ -1,0 +1,749 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <title>GODDEN TECH GLOBAL | Premium Gadgets</title>
+  <meta name="description" content="GODDEN TECH GLOBAL - Shop smartphones, laptops, gaming accessories, audio, wearables and more.">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <!-- ================= AUTH PAGE ================= -->
+
+  <section id="authPage" class="auth-page">
+
+    <div class="auth-background"></div>
+
+    <div class="auth-box">
+
+      <div class="auth-logo">
+        <div class="logo-mark">G</div>
+        <div>
+          <strong>GODDEN TECH</strong>
+          <span>GLOBAL</span>
+        </div>
+      </div>
+
+      <div class="auth-heading">
+        <h1>Welcome</h1>
+        <p>Create an account or sign in to continue shopping.</p>
+      </div>
+
+      <div class="auth-tabs">
+        <button id="loginTab" class="auth-tab active" type="button">
+          Login
+        </button>
+
+        <button id="registerTab" class="auth-tab" type="button">
+          Create Account
+        </button>
+      </div>
+
+      <!-- LOGIN -->
+
+      <form id="loginForm" class="auth-form">
+
+        <label>Email</label>
+        <input
+          id="loginEmail"
+          type="email"
+          placeholder="Enter your email"
+          required
+        >
+
+        <label>Password</label>
+        <input
+          id="loginPassword"
+          type="password"
+          placeholder="Enter your password"
+          required
+        >
+
+        <button class="primary-btn full-btn" type="submit">
+          Login
+        </button>
+
+        <p class="auth-switch">
+          Don't have an account?
+          <button id="goRegister" type="button">Create one</button>
+        </p>
+
+      </form>
+
+      <!-- REGISTER -->
+
+      <form id="registerForm" class="auth-form hidden">
+
+        <label>Full Name</label>
+        <input
+          id="registerName"
+          type="text"
+          placeholder="Your full name"
+          required
+        >
+
+        <label>Email</label>
+        <input
+          id="registerEmail"
+          type="email"
+          placeholder="Your email address"
+          required
+        >
+
+        <label>Password</label>
+        <input
+          id="registerPassword"
+          type="password"
+          placeholder="Create a password"
+          minlength="6"
+          required
+        >
+
+        <label>Confirm Password</label>
+        <input
+          id="registerConfirm"
+          type="password"
+          placeholder="Confirm your password"
+          minlength="6"
+          required
+        >
+
+        <button class="primary-btn full-btn" type="submit">
+          Create Account
+        </button>
+
+        <p class="auth-switch">
+          Already have an account?
+          <button id="goLogin" type="button">Login</button>
+        </p>
+
+      </form>
+
+      <p class="auth-note">
+        🔒 Your account is required before you can shop.
+      </p>
+
+    </div>
+  </section>
+
+
+  <!-- ================= STORE ================= -->
+
+  <main id="storePage" class="hidden">
+
+    <!-- TOP BAR -->
+
+    <div class="top-bar">
+      <div class="container top-bar-inner">
+
+        <span>🔥 Welcome to GODDEN TECH GLOBAL</span>
+
+        <div class="top-links">
+          <span>Secure Shopping</span>
+          <span>Fast Delivery</span>
+          <span>Quality Gadgets</span>
+        </div>
+
+      </div>
+    </div>
+
+
+    <!-- HEADER -->
+
+    <header class="main-header">
+
+      <div class="container header-inner">
+
+        <button
+          id="mobileMenuButton"
+          class="mobile-menu-button"
+          type="button"
+        >
+          ☰
+        </button>
+
+        <a
+          href="#"
+          class="brand"
+          id="brandHome"
+        >
+
+          <div class="brand-mark">G</div>
+
+          <div class="brand-text">
+            <strong>GODDEN TECH</strong>
+            <span>GLOBAL</span>
+          </div>
+
+        </a>
+
+
+        <div class="search-box">
+
+          <input
+            id="searchInput"
+            type="search"
+            placeholder="Search for phones, laptops, gaming..."
+          >
+
+          <button id="searchButton" type="button">
+            🔍
+          </button>
+
+        </div>
+
+
+        <div class="header-actions">
+
+          <button id="accountButton" class="header-action" type="button">
+            <span>👤</span>
+            <small>Account</small>
+          </button>
+
+          <button id="ordersButton" class="header-action" type="button">
+            <span>📦</span>
+            <small>Orders</small>
+          </button>
+
+          <button id="cartButton" class="header-action cart-action" type="button">
+            <span>🛒</span>
+            <small>Cart</small>
+            <b id="cartCount">0</b>
+          </button>
+
+        </div>
+
+      </div>
+    </header>
+
+
+    <!-- CATEGORY NAV -->
+
+    <nav id="categoryNav" class="category-nav">
+
+      <div class="container category-inner">
+
+        <button class="category-btn active" data-category="All">
+          All
+        </button>
+
+        <button class="category-btn" data-category="Smartphones">
+          📱 Smartphones
+        </button>
+
+        <button class="category-btn" data-category="Laptops">
+          💻 Laptops
+        </button>
+
+        <button class="category-btn" data-category="Audio">
+          🎧 Audio
+        </button>
+
+        <button class="category-btn" data-category="Gaming">
+          🎮 Gaming
+        </button>
+
+        <button class="category-btn" data-category="Wearables">
+          ⌚ Wearables
+        </button>
+
+        <button class="category-btn" data-category="Accessories">
+          🔌 Accessories
+        </button>
+
+        <button class="category-btn" data-category="Tablets">
+          📲 Tablets
+        </button>
+
+      </div>
+
+    </nav>
+
+
+    <!-- HERO -->
+
+    <section class="hero">
+
+      <div class="container hero-content">
+
+        <div class="hero-text">
+
+          <span class="hero-label">
+            ⚡ GODDEN TECH GLOBAL
+          </span>
+
+          <h1>
+            Upgrade Your
+            <span>Tech Life.</span>
+          </h1>
+
+          <p>
+            Discover smartphones, laptops, gaming gear,
+            audio devices and accessories at great prices.
+          </p>
+
+          <div class="hero-buttons">
+
+            <button id="shopNowButton" class="primary-btn" type="button">
+              Shop Now →
+            </button>
+
+            <button id="viewDealsButton" class="secondary-btn" type="button">
+              🔥 View Deals
+            </button>
+
+          </div>
+
+        </div>
+
+        <div class="hero-visual">
+
+          <div class="hero-circle">
+            <div class="hero-phone">
+              📱
+            </div>
+          </div>
+
+          <div class="floating-card floating-card-one">
+            ⚡ Flash Deals
+          </div>
+
+          <div class="floating-card floating-card-two">
+            🚚 Fast Delivery
+          </div>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FEATURES -->
+
+    <section class="features">
+
+      <div class="container feature-grid">
+
+        <div class="feature">
+          <span>🚚</span>
+          <div>
+            <strong>Fast Delivery</strong>
+            <p>Get your order delivered.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span>🔒</span>
+          <div>
+            <strong>Secure Shopping</strong>
+            <p>Shop with confidence.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span>💳</span>
+          <div>
+            <strong>Easy Ordering</strong>
+            <p>Simple checkout process.</p>
+          </div>
+        </div>
+
+        <div class="feature">
+          <span>💬</span>
+          <div>
+            <strong>Customer Support</strong>
+            <p>We're here to help.</p>
+          </div>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FLASH DEALS -->
+
+    <section id="dealsSection" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-label">LIMITED TIME</span>
+            <h2>🔥 Flash Deals</h2>
+          </div>
+
+          <div class="countdown" id="countdown">
+            24:00:00
+          </div>
+
+        </div>
+
+        <div id="dealsGrid" class="product-grid"></div>
+
+      </div>
+
+    </section>
+
+
+    <!-- CATEGORIES -->
+
+    <section class="section categories-section">
+
+      <div class="container">
+
+        <div class="section-heading centered">
+          <div>
+            <span class="section-label">SHOP BY CATEGORY</span>
+            <h2>Explore Categories</h2>
+          </div>
+        </div>
+
+        <div class="category-cards">
+
+          <button class="category-card" data-category="Smartphones">
+            <span>📱</span>
+            <strong>Smartphones</strong>
+            <small>Latest phones</small>
+          </button>
+
+          <button class="category-card" data-category="Laptops">
+            <span>💻</span>
+            <strong>Laptops</strong>
+            <small>Work & gaming</small>
+          </button>
+
+          <button class="category-card" data-category="Audio">
+            <span>🎧</span>
+            <strong>Audio</strong>
+            <small>Headphones & more</small>
+          </button>
+
+          <button class="category-card" data-category="Gaming">
+            <span>🎮</span>
+            <strong>Gaming</strong>
+            <small>Level up</small>
+          </button>
+
+          <button class="category-card" data-category="Wearables">
+            <span>⌚</span>
+            <strong>Wearables</strong>
+            <small>Smart watches</small>
+          </button>
+
+          <button class="category-card" data-category="Accessories">
+            <span>🔌</span>
+            <strong>Accessories</strong>
+            <small>Power & cables</small>
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- PRODUCTS -->
+
+    <section id="productsSection" class="section">
+
+      <div class="container">
+
+        <div class="section-heading">
+
+          <div>
+            <span class="section-label">OUR STORE</span>
+            <h2 id="productsTitle">Popular Products</h2>
+          </div>
+
+          <button id="clearFilterButton" class="text-button hidden" type="button">
+            Show All
+          </button>
+
+        </div>
+
+        <div id="productsGrid" class="product-grid"></div>
+
+        <div class="load-more-wrap">
+          <button id="loadMoreButton" class="secondary-btn" type="button">
+            Load More
+          </button>
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- APP BANNER -->
+
+    <section class="app-section">
+
+      <div class="container">
+
+        <div class="app-banner">
+
+          <div class="app-icon">G</div>
+
+          <div class="app-text">
+            <span>COMING SOON</span>
+            <h2>Get the GODDEN TECH App</h2>
+            <p>
+              Shop faster and receive special offers directly on your phone.
+            </p>
+          </div>
+
+          <button id="downloadAppButton" class="primary-btn" type="button">
+            Download App
+          </button>
+
+        </div>
+
+      </div>
+
+    </section>
+
+
+    <!-- FOOTER -->
+
+    <footer class="footer">
+
+      <div class="container footer-grid">
+
+        <div class="footer-brand">
+
+          <div class="brand">
+            <div class="brand-mark">G</div>
+
+            <div class="brand-text">
+              <strong>GODDEN TECH</strong>
+              <span>GLOBAL</span>
+            </div>
+          </div>
+
+          <p>
+            Your destination for premium gadgets,
+            electronics and tech accessories.
+          </p>
+
+        </div>
+
+
+        <div class="footer-column">
+          <h3>Shop</h3>
+          <button data-category="Smartphones">Smartphones</button>
+          <button data-category="Laptops">Laptops</button>
+          <button data-category="Gaming">Gaming</button>
+          <button data-category="Audio">Audio</button>
+        </div>
+
+
+        <div class="footer-column">
+          <h3>Help</h3>
+          <button id="footerOrders">My Orders</button>
+          <button id="footerAccount">My Account</button>
+          <button id="supportButton">Customer Support</button>
+        </div>
+
+
+        <div class="footer-column">
+          <h3>Contact</h3>
+
+          <a
+            href="https://wa.me/2347068270950"
+            target="_blank"
+            rel="noopener"
+          >
+            WhatsApp
+          </a>
+
+          <span>Fast Response</span>
+          <span>Secure Ordering</span>
+        </div>
+
+      </div>
+
+
+      <div class="footer-bottom">
+        <div class="container">
+          © <span id="year"></span> GODDEN TECH GLOBAL. All rights reserved.
+        </div>
+      </div>
+
+    </footer>
+
+  </main>
+
+
+  <!-- ================= CART DRAWER ================= -->
+
+  <div id="overlay" class="overlay"></div>
+
+  <aside id="cartDrawer" class="drawer">
+
+    <div class="drawer-header">
+
+      <div>
+        <span class="drawer-label">YOUR SHOPPING BAG</span>
+        <h2>Shopping Cart</h2>
+      </div>
+
+      <button id="closeCartButton" class="close-button" type="button">
+        ×
+      </button>
+
+    </div>
+
+    <div id="cartItems" class="drawer-content"></div>
+
+    <div class="cart-footer">
+
+      <div class="subtotal-row">
+        <span>Subtotal</span>
+        <strong id="cartSubtotal">₦0</strong>
+      </div>
+
+      <button id="checkoutButton" class="primary-btn full-btn" type="button">
+        Checkout →
+      </button>
+
+      <button id="continueShoppingButton" class="secondary-btn full-btn" type="button">
+        Continue Shopping
+      </button>
+
+    </div>
+
+  </aside>
+
+
+  <!-- ================= ACCOUNT DRAWER ================= -->
+
+  <aside id="accountDrawer" class="drawer">
+
+    <div class="drawer-header">
+
+      <div>
+        <span class="drawer-label">MY ACCOUNT</span>
+        <h2>Account</h2>
+      </div>
+
+      <button id="closeAccountButton" class="close-button" type="button">
+        ×
+      </button>
+
+    </div>
+
+    <div class="account-content">
+
+      <div class="account-avatar">
+        👤
+      </div>
+
+      <h2 id="accountName">User</h2>
+      <p id="accountEmail">user@email.com</p>
+
+      <div class="account-actions">
+
+        <button id="accountOrdersButton" type="button">
+          📦 My Orders
+        </button>
+
+        <button id="logoutButton" type="button">
+          🚪 Logout
+        </button>
+
+      </div>
+
+    </div>
+
+  </aside>
+
+
+  <!-- ================= ORDERS DRAWER ================= -->
+
+  <aside id="ordersDrawer" class="drawer">
+
+    <div class="drawer-header">
+
+      <div>
+        <span class="drawer-label">PURCHASE HISTORY</span>
+        <h2>My Orders</h2>
+      </div>
+
+      <button id="closeOrdersButton" class="close-button" type="button">
+        ×
+      </button>
+
+    </div>
+
+    <div id="ordersContent" class="drawer-content"></div>
+
+  </aside>
+
+
+  <!-- ================= PRODUCT MODAL ================= -->
+
+  <div id="productModal" class="modal">
+
+    <div class="modal-box">
+
+      <button id="closeProductModal" class="modal-close" type="button">
+        ×
+      </button>
+
+      <div id="productModalContent"></div>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= APP POPUP ================= -->
+
+  <div id="appPopup" class="popup hidden">
+
+    <div class="popup-box">
+
+      <button id="closeAppPopup" class="modal-close" type="button">
+        ×
+      </button>
+
+      <div class="popup-icon">
+        📱
+      </div>
+
+      <h2>Get the GODDEN TECH App</h2>
+
+      <p>
+        Download the app when it becomes available for a faster shopping experience.
+      </p>
+
+      <button id="popupDownloadButton" class="primary-btn full-btn" type="button">
+        Download App
+      </button>
+
+    </div>
+
+  </div>
+
+
+  <!-- ================= TOAST ================= -->
+
+  <div id="toast" class="toast"></div>
+
+
+  <script src="script.js"></script>
+
+</body>
+              </html>
